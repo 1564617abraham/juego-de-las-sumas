@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-image: url("fondo2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+section {
+    max-width: 90%;
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#nicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sumas{
+    display: none;
+}
+
+#resultados{
+    display: none;
+}
+
+/*Pantalla inicial*/
+
+#inicio .contenedor-inicio {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /* height: 50%; */
+    width: 50%;
+    margin: -5% 0 0 -25%;
+}
+
+#inicio .contenedor-inicio h2 {
+    text-transform: capitalize;
+    font-size: 54px;
+}
+
+#inicio .contenedor-inicio button {
+    margin-top: 60px;
+    padding: 25px 25px;
+    border: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #ffda9e;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#inicio .contenedor-inicio button:hover {
+    cursor: pointer;
+    background-color: rgba(59, 59, 59, 0.747);
+    color:#ffda9e;
+    border: none;
+}
+
+
+/*Pantalla sumas*/
+
+#sumas .cotenedor-sumas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    margin: -5% 0 0 -25%;
+}
+
+#sumas .contenedor-sumas h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    
+}
+
+#sumas .contenedor-sumas .operaciones {
+    margin-top: 30px;
+}
+
+#sumas .contenedor-sumas .operaciones .fila {
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+}
+
+#sumas .contenedor-sumas .operaciones .fila2 .signo {
+    margin-inline-start:-67px;
+    margin-right: 33px;
+}
+
+#sumas .contenedor-sumas .operaciones hr {
+    margin: 16px 0 26px;
+    height: 6px;
+    border: solid;
+    background-color: black;
+}
+
+
+#sumas .contenedor-sumas .operaciones form .resultado {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    font-size: 54px;
+    text-align: center;
+    background-color: #ffda9e;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+}
+
+#sumas .contenedor-sumas .operaciones form button {
+    width: 50%;
+    padding: 15px;
+    margin: 0 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffda9e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#sumas .contenedor-sumas .operaciones form button:hover {
+    background-color: rgba(59, 59, 59, 0.747);
+    color: #ffda9e;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+#sumas .nota{
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#sumas .juegos {
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#resultados {
+    display: block;
+    padding: 10%;
+    margin-top: 100px;
+    margin-left: 5vw;
+    position: fixed;
+}
+
+#resultados h2 {
+    width: 100%;
+    font-size: 54px;
+}
+
+#resultados h3 {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-size: 64px;
+}
+
+#resultados  button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #ffda9e;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#resultados button:hover {
+    cursor: pointer;
+    background-color: rgba(59, 59, 59, 0.747);
+    color:#ffda9e;
+    border: none;
+}

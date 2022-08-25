@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Sumas</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenedor-inicio">
+            <h2>bienvenida al juego de las sumas!</h2>
+            <button onclick="startGame()"><span></span>Empieza a sumar!</button>
+        </div>
+        
+    </section>
+    <section id="sumas">
+        <div class="contenedor-sumas">
+            <h2>Cuanto es?</h2>
+            <div class="operaciones">
+                <div class="fila">
+                    <div id="operador1">3</div>
+                </div>
+                <div class="fila fila2">
+                    <div class="signo">+</div>
+                    <div id="operador2">4</div>
+                </div>
+                <div >
+                    <hr>
+                </div>
+                <form action="/">
+                    <input type="number" id="resultado" class="resultado">
+                    <button type="reset" onclick="comprueba()">Comprueba</button>
+                </form>
+            </div>
+            <div class="nota">
+                <span class="contador">ACERTADAS</span>
+                <span id="contador">0</span>
+            </div>
+            <div class="juegos">
+                <span class="num-juegos">NUMERO DE JUEGOS</span>
+                <span id="num-juegos">0</span>
+            </div>
+        </div>
+    </section>
+    <section id="resultados">
+        <h2 class="fila-resultado">TU NOTA ES</h2>
+        <h3 id="res" class="fila-resultado"><span id="acertadas">0</span>/<span id="juegos">0</span></h3>
+        <button onclick="startGame()">JUGAR DE NUEVO</button>
+    </section>
+</body>
+</html>
